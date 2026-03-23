@@ -1,0 +1,185 @@
+/* GENERAL STYLES */
+body {
+    background: linear-gradient(135deg, #1a2332 0%, #243447 100%);
+    color: #e2e8f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    padding: 1rem 2rem;
+    background: rgba(26, 35, 50, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #4a9eff;
+}
+
+.logo {
+    height: 80px;
+}
+
+.auth-btn {
+    background: linear-gradient(135deg, #ff6b9d 0%, #ec4899 100%);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 107, 157, 0.3);
+}
+.auth-btn:hover {
+    background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(255, 107, 157, 0.4);
+}
+
+/* GALLERY */
+.gallery {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.tee-card {
+    background: linear-gradient(145deg, #2a3441 0%, #1f2937 100%);
+    border: 2px solid #4a9eff;
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow:
+            0 8px 20px rgba(0, 0, 0, 0.15),
+            0 0 0 1px rgba(74, 158, 255, 0.1);
+}
+.tee-card:hover {
+    transform: scale(1.02);
+    box-shadow:
+            0 12px 30px rgba(0, 0, 0, 0.2),
+            0 0 25px rgba(74, 158, 255, 0.3);
+    border-color: #ff6b9d;
+}
+.tee-card img {
+    width: 100%;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* ACTIONS BUTTONS */
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+.actions form {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.actions button {
+    background: linear-gradient(135deg, #4a9eff 0%, #0ea5e9 100%);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(74, 158, 255, 0.3);
+}
+.actions button:hover {
+    background: linear-gradient(135deg, #ff6b9d 0%, #ec4899 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(255, 107, 157, 0.4);
+}
+.count {
+    color: #4a9eff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid #4a9eff;
+    font-size: 0.9rem;
+    background: rgba(26, 35, 50, 0.8);
+    margin-top: 2rem;
+    color: #94a3b8;
+}
+
+/* MODAL STYLES */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 35, 50, 0.9);
+    backdrop-filter: blur(8px);
+}
+.modal-content {
+    background: linear-gradient(145deg, #2a3441 0%, #1f2937 100%);
+    border: 2px solid #4a9eff;
+    border-radius: 1.5rem;
+    margin: 5% auto;
+    padding: 2rem;
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.3),
+            0 0 0 1px rgba(74, 158, 255, 0.2);
+}
+.modal-content img {
+    max-width: 80%;
+    border-radius: 0.75rem;
+    border: 2px solid #374151;
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #ff6b9d;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.close:hover {
+    color: #4a9eff;
+    transform: scale(1.1);
+}
+.modal .actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.modal .actions form button {
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+}
+.error {
+    display: flex;
+    justify-content: center; /* centre horizontalement */
+    align-items: center;     /* centre verticalement */
+    height: 10px;           /* ajuste si besoin */
+}
