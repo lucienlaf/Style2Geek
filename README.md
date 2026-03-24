@@ -47,7 +47,7 @@ L’entreprise fictive **Style2Geek** souhaite créer une plateforme permettant 
 
   * HTML
   * CSS
-  * JavaScript (par IA)
+  * JavaScript
 
 * **Backend :**
 
@@ -65,7 +65,7 @@ L’entreprise fictive **Style2Geek** souhaite créer une plateforme permettant 
 1. Cloner le projet :
 
 ```bash
-git clone https://github.com/ton-username/style2geek.git
+git clone https://github.com/lucienlaf/style2geek.git
 ```
 
 2. Importer la base de données :
